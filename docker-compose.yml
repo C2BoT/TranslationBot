@@ -2,7 +2,11 @@ version: '3'
 services:
   bot:
     image: python:3.8
-    volumes:
-      - .:/app
-    working_dir: /app
-    command: ["python", "tiktokinfo.py"]
+    command: python tiktokinfo.py
+    tty: true
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - CHANNEL=${CHANNEL}
+      - ADMIN=${ADMIN}
+      - CHANNEKS=${CHANNEKS}
+      
