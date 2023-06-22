@@ -1,12 +1,14 @@
-version: "3.3"
+version: '3'
 
 services:
-  app:
+  bot:
     container_name: srcbot
-    build: .
-    command: bash bash.sh
+    build:
+      context: .
+      dockerfile: Dockerfile
     environment:
       - BOT_TOKEN=${BOT_TOKEN}
       - CHANNEL=${CHANNEL}
       - ADMIN=${ADMIN}
-      - CHANNEKS=${CHANNEKS}
+      - CHANNELS=${CHANNELS}
+      
