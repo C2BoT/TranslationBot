@@ -1,0 +1,3 @@
+name: my-telegram-bot
+buildCommand: docker build -t my-telegram-bot:latest -f Deployfile .
+startCommand: docker run -e TOKEN=${TOKEN} my-telegram-bot:latest
