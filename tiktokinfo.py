@@ -1,3 +1,4 @@
+
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
@@ -5,16 +6,13 @@ import telebot
 from telebot import types
 import os
 
-
 BOT_TOKEN = os.getenv('BOT_TOKEN')
-
 ADMIN = os.getenv('ADMIN')
 CHANNEL = os.getenv('CHANNEL')
-CHANNEKS = os.getenv('CHANNEKS')
+CHANNELS = os.getenv('CHANNELS')
 
+bot = telebot.TeleBot(BOT_TOKEN)
 
-
-bot=telebot.TeleBot(BOT_TOKEN)
 def  check_file():
     try:
         open("member.txt","r")
