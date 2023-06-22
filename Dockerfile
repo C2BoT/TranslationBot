@@ -2,7 +2,7 @@ FROM python:3.8
 
 WORKDIR /app
 
-COPY tiktokinfo.py .
+COPY translation.py .
 
 RUN pip install --no-cache-dir telebot \
     && pip install --no-cache-dir python-telegram-bot \
