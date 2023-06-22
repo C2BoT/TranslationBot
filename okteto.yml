@@ -1,6 +1,13 @@
-name: my-tiktok-bot
+version: '3'
 services:
-  - name: bot
+  bot:
     image: python:3.8
+    volumes:
+      - ./tiktokinfo.py:/app/tiktokinfo.py
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - CHANNEL=${CHANNEL}
+      - ADMIN=${ADMIN}
+      - CHANNEKS=${CHANNEKS}
     command: python tiktokinfo.py
-    tty: true
+    
