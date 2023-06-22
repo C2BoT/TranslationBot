@@ -8,7 +8,4 @@ services:
       dockerfile: Dockerfile
     environment:
       - BOT_TOKEN=${BOT_TOKEN}
-      - CHANNEL=${CHANNEL}
-      - ADMIN=${ADMIN}
-      - CHANNEKS=${CHANNEKS}
       
