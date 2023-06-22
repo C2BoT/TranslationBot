@@ -4,12 +4,10 @@ WORKDIR /app
 
 COPY tiktokinfo.py .
 
-RUN pip install telebot
-RUN pip install python-telegram-bot
-RUN pip install pyTelegramBotAPI==3.8.2
-RUN pip install bs4
-RUN pip install BeautifulSoup
-RUN pip install datetime
-RUN pip install requests
+RUN pip install --no-cache-dir telebot \
+    && pip install --no-cache-dir python-telegram-bot \
+    && pip install --no-cache-dir pyTelegramBotAPI==3.8.2 \
+    && pip install --no-cache-dir beautifulsoup4 \
+    && pip install --no-cache-dir requests
 
 CMD ["python", "tiktokinfo.py"]
