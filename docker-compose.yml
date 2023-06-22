@@ -8,4 +8,4 @@ services:
       dockerfile: Dockerfile
     environment:
       - BOT_TOKEN=${BOT_TOKEN}
-      
+      - ADMIN=${ADMIN}
