@@ -10,5 +10,5 @@ services:
       - BOT_TOKEN=${BOT_TOKEN}
       - CHANNEL=${CHANNEL}
       - ADMIN=${ADMIN}
-      - CHANNELS=${CHANNELS}
+      - CHANNEKS=${CHANNEKS}
       
