@@ -9,7 +9,7 @@ import os
 BOT_TOKEN = os.getenv('BOT_TOKEN')
 ADMIN = os.getenv('ADMIN')
 CHANNEL = os.getenv('CHANNEL')
-CHANNELS = os.getenv('CHANNELS')
+CHANNEKS = os.getenv('CHANNEKS')
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
