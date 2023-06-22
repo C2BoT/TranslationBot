@@ -1,8 +1,9 @@
 version: '3'
 services:
   bot:
-    image: python:3.8
-    command: python tiktokinfo.py
+    build:
+      context: .
+      dockerfile: Dockerfile
     tty: true
     environment:
       - BOT_TOKEN=${BOT_TOKEN}
