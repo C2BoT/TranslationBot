@@ -1,0 +1,6 @@
+name: my-tiktok-bot
+services:
+  - name: bot
+    image: python:3.8
+    command: python tiktokinfo.py
+    tty: true
