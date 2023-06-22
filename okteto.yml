@@ -1,13 +1,12 @@
-version: '3'
+version: "3.3"
+
 services:
-  bot:
-    image: python:3.8
-    volumes:
-      - ./tiktokinfo.py:/app/tiktokinfo.py
+  app:
+    container_name: srcbot
+    build: .
+    command: bash bash.sh
     environment:
       - BOT_TOKEN=${BOT_TOKEN}
       - CHANNEL=${CHANNEL}
       - ADMIN=${ADMIN}
       - CHANNEKS=${CHANNEKS}
-    command: python tiktokinfo.py
-    
